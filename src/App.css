@@ -41,6 +41,28 @@ button:active {
 	transition: background 0s;
 }
 
+select {
+	background: transparent;
+	cursor: pointer;
+	color: white;
+	font-size: 18px;
+	border-radius: 4px;
+}
+
+select * {
+	background-color: #282c34;
+}
+
+.country-select {
+	margin-left: 10px;
+}
+
+.chart-container {
+	width: 80%;
+	height: 250px;
+	margin: 20px 0px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 10s linear;
