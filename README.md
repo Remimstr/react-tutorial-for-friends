@@ -81,16 +81,16 @@ import './App.css'; // This is a stylesheet, more on that later
 // This is one way to declare a function in JavaScript (see Q1).
 function App() {
   return (
-  	// We put the content we want to show up on the page as tags (see Q2) inside this return statement.
+    // We put the content we want to show up on the page as tags (see Q2) inside this return statement.
     <div className="App"> // The className prop (see Q3) allow us to target this component with styling.
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-        	// Here, we embed a `code` tag straight into the line of text.
+          // Here, we embed a `code` tag straight into the line of text.
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
-        	// `a` makes a link that redirects us to reactjs.org (see Q2 & Q3)
+          // `a` makes a link that redirects us to reactjs.org (see Q2 & Q3)
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
@@ -122,8 +122,8 @@ Lines beginning with `/*` and ending with `*/` are comments.
 ```css
 /* The following line is a selector. It selects the App "class" */
 .App {
-	/* In the following property-value pair, "text-align" is the property and "center" is the value */
-	text-align: center;
+ /* In the following property-value pair, "text-align" is the property and "center" is the value */
+ text-align: center;
 }
 ```
 
@@ -137,8 +137,8 @@ Inside your project folder, inside the `src` folder, open the file named `App.cs
 /* Much like the previous block, this selector will select a class. */
 /* Typically class names are separated by a dash (-) */
 .App-logo {
-	/* Height can be set to a fixed size (ex. 10px) or a relative one like vmin */
-	/* This takes a percentage of the smaller size of the width and height of the whole page */
+  /* Height can be set to a fixed size (ex. 10px) or a relative one like vmin */
+  /* This takes a percentage of the smaller size of the width and height of the whole page */
   height: 40vmin;
   pointer-events: none;
 }
@@ -146,8 +146,8 @@ Inside your project folder, inside the `src` folder, open the file named `App.cs
 /* Don't worry about media queries (the following line) for now */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-  	/* The animation property gets an animation up and running! */
-  	/* Here it references "App-logo-spin", an animation defined later on */
+    /* The animation property gets an animation up and running! */
+    /* Here it references "App-logo-spin", an animation defined later on */
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -244,7 +244,7 @@ We are going to make a new function underneath where we added our state called `
 
 ```
 const handleUpvote = () => {
-	setUserFeedback({ likes: userFeedback.likes + 1 });
+ setUserFeedback({ likes: userFeedback.likes + 1 });
 }
 ```
 
@@ -260,7 +260,7 @@ Hopefully you noticed that the dislike count disappeared after the first click o
 
 ```
 const handleUpvote = () => {
-	setUserFeedback({ ...userFeedback, likes: userFeedback.likes + 1 });
+ setUserFeedback({ ...userFeedback, likes: userFeedback.likes + 1 });
 }
 ```
 
