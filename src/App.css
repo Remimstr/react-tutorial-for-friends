@@ -4,12 +4,46 @@
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
+  /* pointer-events: none; */
+}
+
+.stats-section {
+	margin: 10px;
+}
+
+.liked {
+	color: lightgreen;
+}
+
+.disliked {
+	color: red;
+}
+
+button {
+	font-size: calc(10px + 1vmin);
+	margin: 10px;
+	padding: 4px;
+	color: white;
+	cursor: pointer;
+	border: none;
+	border-radius: 2px;
+	transition: background 0.8s;
+	background-color: #2196f3;
+}
+
+button:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center / 15000%;
+}
+
+button:active {
+	background-color: #6eb9f8;
+	background-size: 100%;
+	transition: background 0s;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
@@ -30,9 +64,9 @@
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate3d(0, 0, 0, 0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate3d(1, 1, 1, 360deg);
   }
 }
